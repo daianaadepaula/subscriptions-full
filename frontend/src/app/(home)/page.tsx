@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         {/* form */}
-				<SubscriptionForm />
+        <SubscriptionForm />
       </div>
     </div>
   )
