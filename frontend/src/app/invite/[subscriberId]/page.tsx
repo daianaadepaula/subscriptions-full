@@ -12,7 +12,7 @@ interface InvitePageProps {
 }
 
 export default async function InvitePage(props: InvitePageProps) {
-	const {subscriberId } = await props.params
+	const { subscriberId } = await props.params
 
 	const inviteLink = `http://localhost:3333/invites/${subscriberId}`
 	
@@ -46,7 +46,7 @@ export default async function InvitePage(props: InvitePageProps) {
           <InviteLinkInput inviteLink={inviteLink} />
 
           {/* stats */}
-          <Stats />
+          <Stats subscriberId={subscriberId} />
         </div>
       </div>
 
